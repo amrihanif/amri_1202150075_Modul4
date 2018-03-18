@@ -31,11 +31,13 @@ public class ListMahasiswa extends AppCompatActivity {
         listNama = (ListView)findViewById(R.id.list);
         mulai = (Button)findViewById(R.id.btn);
 
+        //Untuk meng get data dari array
         listNama.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, new ArrayList<String>()));
 
         mulai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Memanggil method yang dibuat
                 new taskNama().execute();
             }
         });
@@ -48,6 +50,7 @@ public class ListMahasiswa extends AppCompatActivity {
         ProgressDialog pg;
         @Override
         protected void onPreExecute() {
+            //membuat proggress dialog dan sekaligus menampilkan data
             adapter = (ArrayAdapter<String>)listNama.getAdapter();
             pg = new ProgressDialog(ListMahasiswa.this);
             pg.setTitle("ambil data");
@@ -73,6 +76,7 @@ public class ListMahasiswa extends AppCompatActivity {
 
         @Override
         protected String doInBackground(Void... voids) {
+            //menampilkan data array
             for (String listmhsw : list) {
                 publishProgress(listmhsw);
                 try {

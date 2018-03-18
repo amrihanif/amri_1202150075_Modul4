@@ -29,6 +29,7 @@ public class PencariGambar extends AppCompatActivity {
         Cari.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //memanggil method yang sudah dibuat
                 new tampilGambar().execute();
             }
         });
@@ -38,9 +39,12 @@ public class PencariGambar extends AppCompatActivity {
 
         @Override
         protected Bitmap doInBackground(Void... voids) {
+            //mengubah url menjadi string
             String URL = Link.getText().toString();
+
             Bitmap bmp = null;
             try {
+                //mendecode url tadi agar bisa dicari
                 bmp = BitmapFactory.decodeStream((InputStream)new URL(URL).getContent());
             } catch (Exception e) {
                 e.printStackTrace();
@@ -50,6 +54,7 @@ public class PencariGambar extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Bitmap bitmap) {
+            //menampilkan gambar yang sudah dicari
             Gambar.setImageBitmap(bitmap);
         }
 
