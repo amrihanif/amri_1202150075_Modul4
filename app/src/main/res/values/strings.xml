@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">amri_1202150075_studycase4</string>
-    <string name="pilih_salah_satu">Pilih salah satu</string>
+    <string name="pilih_salah_satu">Study Case 4</string>
     <string name="list_nama_mahasiswa">List Nama Mahasiswa</string>
     <string name="pencari_gambar">Pencari gambar</string>
     <string name="mulai_asynctask">Mulai AsyncTask</string>
