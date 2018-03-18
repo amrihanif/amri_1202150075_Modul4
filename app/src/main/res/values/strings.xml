@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">amri_1202150075_studycase4</string>
+    <string name="pilih_salah_satu">Pilih salah satu</string>
+    <string name="list_nama_mahasiswa">List Nama Mahasiswa</string>
+    <string name="pencari_gambar">Pencari gambar</string>
+    <string name="mulai_asynctask">Mulai AsyncTask</string>
+    <string name="cari_gambar">Cari Gambar</string>
+    <string name="ketikkan_url_disini">Ketikkan URL disini</string>
+    <string-array name="list">
+        <item>Amri</item>
+        <item>Hanif</item>
+        <item>Dina</item>
+        <item>Dino</item>
+        <item>Dito</item>
+    </string-array>
+</resources>
